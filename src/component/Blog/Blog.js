@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-
+import './Blog.css'
 const Blog = () => {
     return (
         <Container>
-            <div>
+            <div className='blg-container'>
                 <h1>what is cors?</h1>
                 <p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
                     If the server specifies a single origin (that may dynamically change based on the requesting origin as part of an allowlist) rather than the "*" wildcard, then the server should also include Origin in the Vary response header to indicate to clients that server responses will differ based on the value of the Origin request header.
@@ -13,7 +13,7 @@ const Blog = () => {
 
 
 
-            <div>
+            <div className='blg-container'>
                 <h1> Why are you using firebase? What other options do you have to implement authentication?</h1>
                 <p>In the present era, user authentication is one of the most important requirements for Android apps. It is essential to authenticate users, and it is much harder if we have to write all this code on our own. This is done very easily with the help of Firebase.
 
@@ -30,7 +30,7 @@ const Blog = () => {
             </div>
 
 
-            <div>
+            <div className='blg-container'>
                 <h1> How does the private route work?</h1>
                 <p>The private route component is similar to the public route, the only change is that redirect URL and authenticate condition. If the user is not authenticated he will be redirected to the login page and the user can only access the authenticated routes If he is authenticated (Logged in)
                     Protected routes are those routes that only grant access to authorized users. This means that users must first meet certain conditions before accessing that specific route. For instance, your application can require only logged-in users be able to visit the dashboard page.
@@ -40,7 +40,7 @@ const Blog = () => {
             </div>
 
 
-            <div>
+            <div className='blg-container'>
                 <h1>
                     What is Node? How does Node work?
                 </h1>

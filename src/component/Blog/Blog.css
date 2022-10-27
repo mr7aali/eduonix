@@ -1,0 +1,10 @@
+.blg-container{
+   
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+.blg-container h1{
+    margin-bottom: 30px;
+}
