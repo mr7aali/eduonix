@@ -3,11 +3,16 @@ import React from 'react';
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/UserContext';
 
 const Login = () => {
-    const {singIn,setUser,googleLogIn}= useContext(AuthContext);
+    const { singIn, setUser, googleLogIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+  
     const handleSubmit = (event) => {
         event.preventDefault();
         const from = event.target;
@@ -15,21 +20,23 @@ const Login = () => {
         const email = from.email.value;
         const password = from.password.value;
         console.log(email, password)
-       singIn(email,password)
-       .then(result=>{
-         const user = result.user;
-         console.log(user);
-         setUser(user);
-       })
+        singIn(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setUser(user);
+                navigate(from, { replace: true });
+            })
 
     }
-  
+
     const handleGoogleSingIn = () => {
         const googleProvider = new GoogleAuthProvider();
         googleLogIn(googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.error(error)
