@@ -3,3 +3,14 @@
   margin: 10px;
   text-decoration: none;
 }
+.user-profile-img{
+  height: 50px ;
+  width: 50px;
+  border-radius: 50px;
+
+}
+.user-profile-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
