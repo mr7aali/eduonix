@@ -12,7 +12,12 @@ const Cart = ({course}) => {
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                       {details}
+                    {  
+                   details.length >90 ?
+                   <p>{details.slice(0,90) + "..."} <Link to={`/courses/${course.id}`} >Read More</Link></p>
+                   :
+                   <p>{details}</p>
+                   }
                     </Card.Text>
                     <Link to={`/courses/${course.id}`}><Button variant="primary">Details</Button></Link> <span className='ms-3'>Cost ${price}</span>
                 </Card.Body>
