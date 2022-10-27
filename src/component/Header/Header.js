@@ -34,7 +34,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-5 me-auto">
                             <div className='header-link-container'>
-                                <Link to='course' className='fs-5'>Courses</Link>
+                                <Link to='/courses' className='fs-5'>Courses</Link>
                                 <Link to='fqa' className='fs-5'>FAQ</Link>
                                 <Link to='blog' className='fs-5'>Blog</Link>
                             </div>
