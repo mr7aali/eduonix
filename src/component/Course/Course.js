@@ -10,14 +10,14 @@ import './Course.css'
 const Course = () => {
 
     const [Courses, setCourse] = useState([]);
-
+   
 
     useEffect(() => {
-        fetch('http://localhost:5000/courses')
+        fetch('https://eduonix-server.vercel.app/courses')
             .then(res => res.json())
             .then(data => setCourse(data))
     }, [])
-   
+   console.log(Courses);
     return (
         <Container>
             <Row className='m-5'>

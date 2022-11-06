@@ -34,7 +34,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/courses/:Id',
-                loader:({params}) => fetch(`http://localhost:5000/courses/${params.Id}`),
+                loader:({params}) => fetch(`https://eduonix-server.vercel.app/courses/${params.Id}`),
                 element:<CourseDetails></CourseDetails>
             },
             {
