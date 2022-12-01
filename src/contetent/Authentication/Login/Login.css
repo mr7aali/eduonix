@@ -1,0 +1,22 @@
+.login-page{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+}
+.login-card{
+ 
+    background-color: #94BEFE;
+    border-radius: 15px;
+}
+.login-page h1{
+    margin: 0;
+}
+.full-login-container{
+    height: 100vh;
+}
+.login-img{
+    
+    display: flex;
+    align-items: center;
+}
