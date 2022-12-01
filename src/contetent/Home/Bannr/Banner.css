@@ -7,7 +7,11 @@
     height:100%;
     display:inline-block;
     border-radius:15px ;
-    background: linear-gradient(to right, #151515 0%,rgba(21, 21, 21, 0) 100%); 
+    /* background: linear-gradient( #151515 0%,rgba(21, 21, 21,0) 100% );  */
+    /* background: linear-gradient(to right, #151515 0%,rgba(21, 21, 21, 0) 100%);  */
+    background: black;
+    opacity: 0.7;
+    
    
   }
   .img-gradient img{
@@ -18,6 +22,11 @@
     border: 2px solid white;
     color: white;
   }
-
+.banner-btn{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
  
   
