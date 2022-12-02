@@ -27,12 +27,10 @@ const RightSideCourse = () => {
                                         :
                                         <></>
                                     }
-
-
-
-
-
                                 </p>
+                                
+                                     <p className='text-lg font-bold text-primary mb-5'>Price: {c?.price}</p>
+                               
                                 <div className="card-actions justify-center ">
                                    
                                     <Link to={`/courses/${c?.id}`} className="btn btn-primary w-full ">

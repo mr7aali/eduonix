@@ -25,7 +25,7 @@ const Course = () => {
                     {/* text-xl font-semibold m-2 text-center left-side-link */}
                        
                         {
-                            courses.map(c=><Link className='mx-auto mt-5'> <button className="btn btn-outline">{c.name}</button></Link>)
+                            courses.map(c=><Link to={`/courses/${c.id}`} className='mx-auto mt-5'> <button className="btn btn-outline">{c.name}</button></Link>)
                         }
                     </ul>
 

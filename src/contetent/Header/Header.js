@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
+import ToggleSwitch from '../Toggole/ToggleSwitch';
 import './Header.css'
 
 
 const Header = () => {
     const { user, LogOut } = useContext(AuthContext);
-
+    console.log(user?.photoURL)
     console.log(user)
     const handleLogOut = () => {
         LogOut()
@@ -51,7 +52,10 @@ const Header = () => {
 
                 <div className="navbar-end">
 
-
+                    <React.Fragment>
+                        <ToggleSwitch  label=" "  />
+                    </React.Fragment>
+                    
 
                     {
                         user ?
@@ -73,7 +77,15 @@ const Header = () => {
 
                                     <div className="avatar just-img-div">
                                         <div className="mask mask-squircle w-12 h-12 mr-5  header-img ">
-                                            <img src={user?.photoURL} alt="Avatar Tailwind CSS Component" />
+
+
+                                            {
+                                                user.photoURL ?
+                                                    <img src={user?.photoURL} alt="Avatar Tailwind CSS Component" />
+                                                    :
+                                                    <img src={'https://i.ibb.co/vqPRQzM/depositphotos-69759195-stock-illustration-male-person-silhouette.webp'} alt="Avatar Tailwind CSS Component" />
+                                            }
+
                                         </div>
                                     </div>
 

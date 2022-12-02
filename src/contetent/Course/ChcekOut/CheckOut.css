@@ -1,0 +1,17 @@
+.checkout-container{
+    background-color: #444954;
+    margin: 60px;
+    width: 70vw;
+    margin: 100px auto;
+    padding: 60px;
+}
+.nameFild{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.border-input{
+    border: 1px solid blue;
+}
