@@ -5,6 +5,7 @@ import Blog from "../contetent/Blog/Blog";
 import Checkout from "../contetent/Course/ChcekOut/Checkout";
 import Course from "../contetent/Course/Course";
 import CourseDetails from "../contetent/CourseDetails/CourseDetails";
+import Error from "../contetent/Error/Error";
 import Home from "../contetent/Home/Home";
 import Privet from "../contetent/PrivetRoute/Privet";
 import RightSideCourse from "../contetent/RightSideCourse/RightSideCourse";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
                 path: '/courses/:_id',
                 element: <CourseDetails></CourseDetails>,
                 loader: ({ params }) => fetch(`https://eduonix-server.vercel.app/courses/${params._id}`)
+            },
+            {
+                path:'*',
+                element:<Error></Error>
             }
         ]
     }
