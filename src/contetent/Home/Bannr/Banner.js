@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Banner.css'
 
 
@@ -40,7 +41,7 @@ const Banner = () => {
                 <div id="item1" className="carousel-item w-full relative">
 
                     <div className='w-full img-gradient h-4/5 rounded-lg'>
-                        <img alt='https://i.ibb.co/P54wjFC/gym-equipment-accessories-on-stone-260nw-1644136534.webp ' src='https://i.ibb.co/dkhGHkT/bruce-mars-o-LStr-TTMz2s-unsplash-min.jpg' className="w-full" />
+                        <img alt='https://i.ibb.co/ckPPwGw/pexels-kampus-production-7983617.jpg' src='https://i.ibb.co/sKwzzRZ/pexels-enzo-mu-oz-2663853.jpg' className="w-full" />
                     </div>
                     <div className='absolute top-1/4 left-24 banner-h1'>
                         <h1 className='text-6xl text-center text-white font-bold '>Start Learning the <br /> <span className='text-red-700'>Digital Skill Now</span></h1>
@@ -48,7 +49,7 @@ const Banner = () => {
 
 
                         <div className='banner-btn'>
-                            <button className="btn btn-primary text-center mt-16 mx-auto ">Get Start</button>
+                            <Link to='/course' className="btn btn-primary text-center mt-16 mx-auto ">Get Course</Link>
                         </div>
                     </div>
 
@@ -58,14 +59,14 @@ const Banner = () => {
                 <div id="item2" className="carousel-item w-full relative">
 
                     <div className='w-full img-gradient h-4/5 rounded-lg'>
-                        <img alt='https://i.ibb.co/P54wjFC/gym-equipment-accessories-on-stone-260nw-1644136534.webp ' src='https://i.ibb.co/dkhGHkT/bruce-mars-o-LStr-TTMz2s-unsplash-min.jpg' className="w-full" />
+                        <img alt='https://i.ibb.co/P54wjFC/gym-equipment-accessories-on-stone-260nw-1644136534.webp ' src='https://i.ibb.co/tQWYpgG/pexels-tranmautritam-68761.jpg' className="w-full" />
                     </div>
                     <div className='absolute top-1/4 left-24 banner-h1'>
                         <h1 className='text-6xl text-center text-white font-bold '> Transform <br /> <span className='text-red-700'>your life</span> through education</h1>
                         <p className='text-white text-center mt-20  text-2xl'>Better education opens up a new wave of opportunities and it is now more relevant than ever <br /> in the times we live in where technology and education ensure that opportunities are no longer limited by geography.</p>
 
                         <div className='banner-btn'>
-                            <button className="btn btn-primary text-center mt-16 mx-auto ">Get Start</button>
+                        <Link to='/course' className="btn btn-primary text-center mt-16 mx-auto ">Get Course</Link>
                         </div>
                     </div>
 
@@ -75,14 +76,14 @@ const Banner = () => {
                 <div id="item3" className="carousel-item w-full relative">
 
                     <div className='w-full img-gradient h-4/5 rounded-lg'>
-                        <img alt='https://i.ibb.co/P54wjFC/gym-equipment-accessories-on-stone-260nw-1644136534.webp ' src='https://i.ibb.co/dkhGHkT/bruce-mars-o-LStr-TTMz2s-unsplash-min.jpg' className="w-full" />
+                        <img alt='https://i.ibb.co/P54wjFC/gym-equipment-accessories-on-stone-260nw-1644136534.webp ' src='https://i.ibb.co/Y20y2R9/pexels-pixabay-247819.jpg' className="w-full" />
                     </div>
                     <div className='absolute top-1/4  banner-h1'>
                         <h1 className='text-6xl text-center text-white font-bold '>Learn without <br /> <span className='text-red-700'>limits</span></h1>
                         <p className='text-white text-center mt-20  text-2xl'>Start, switch, or advance your career with more than 5,200 courses, Professional Certificates, and degrees from world-class universities and companies.
 
                             .</p><div className='banner-btn'>
-                            <button className="btn btn-primary text-center mt-16 mx-auto ">Get Start</button>
+                            <Link to='/course' className="btn btn-primary text-center mt-16 mx-auto ">Get Course</Link>
                         </div>
                     </div>
 
