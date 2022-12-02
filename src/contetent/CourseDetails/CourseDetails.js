@@ -28,7 +28,7 @@ const CourseDetails = () => {
                     <figure><img src={course?.photo} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="text-4xl  m-5 card-title">{course?.name}</h2>
-                        <p className='text-lg font-bold text-primary mb-5 ml-5j'>Price: {course?.price}</p>
+                        <p className='text-lg font-bold text-primary mb-5 ml-5'>Price: {course?.price}</p>
                         <p className='text-xl m-5'>{course?.details}</p>
 
                     </div>

@@ -44,7 +44,7 @@ const Banner = () => {
                         <img alt='https://i.ibb.co/ckPPwGw/pexels-kampus-production-7983617.jpg' src='https://i.ibb.co/sKwzzRZ/pexels-enzo-mu-oz-2663853.jpg' className="w-full" />
                     </div>
                     <div className='absolute top-1/4 left-24 banner-h1'>
-                        <h1 className='text-6xl text-center text-white font-bold '>Start Learning the <br /> <span className='text-red-700'>Digital Skill Now</span></h1>
+                        <h1 className='sm:text-xl lg:text-6xl text-center text-white font-bold '>Start Learning the <br /> <span className='text-red-700'>Digital Skill Now</span></h1>
                         <p className='text-white text-center mt-20 text-2xl'>World is changing rapidly and so is the technology. Learn a new technology to build a better future <br /> for you and for the world. Choose to learn web development, app development and many more</p>
 
 

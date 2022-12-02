@@ -3,9 +3,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:50px ;
-    
- 
 }
 .course-img{
     height: 250px;
+}
+
+
+@media only screen and  (max-width:1700px){
+    .full-container-courses{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and  (max-width:851px){
+    .full-container-courses{
+        grid-template-columns: 1fr ;
+    }
 }

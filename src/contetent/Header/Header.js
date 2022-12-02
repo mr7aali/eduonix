@@ -65,7 +65,7 @@ const Header = () => {
 
 
 
-                                    <div id='left' className='m-2 name-container'>
+                                    <div id='left' className='m-2 name-container '>
                                         <div className="font-bold">{user?.displayName}</div>
                                         <div className="text-sm opacity-50">{user?.email}</div>
                                     </div>
