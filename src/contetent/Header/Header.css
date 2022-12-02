@@ -1,3 +1,33 @@
+.full-header{
+    background-color: lightblue;
+}
+
 hr{
     border: 1px solid blue;
+}
+.header-img{
+cursor: pointer;
+}
+.header-img img{
+    border-radius: 15px;
+}
+
+
+
+.header-name-img-container{
+    display: flex;
+}
+
+
+
+#left{
+   color:#E5E6E6;
+   visibility: hidden;
+}
+ 
+.header-name-img-container:hover #left{
+
+    display: block;
+    color: black;
+    visibility: visible;
 }

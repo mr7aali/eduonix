@@ -4,6 +4,11 @@
     flex-direction: row-reverse;
     padding: 15px;
 }
+.resister-card{
+    background-color: #C1D5DE;
+    border-radius: 15px;
+
+}
 .login-card{
  
     background-color: #94BEFE;

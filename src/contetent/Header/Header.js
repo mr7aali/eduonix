@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider';
 import './Header.css'
+
+
 const Header = () => {
+    const { user, LogOut } = useContext(AuthContext);
+
+    console.log(user)
+    const handleLogOut = () => {
+        LogOut()
+    }
+
     return (
         //max-w-screen-2xl mx-auto
-        <div className=' bg-base-300 '>
-
-
-
-
-
-
-
-
-
+        <div className=' bg-base-300 full-header'>
 
             <div className="navbar mx-auto max-w-screen-xl	">
                 <div className="navbar-start">
@@ -42,14 +43,9 @@ const Header = () => {
                     <ul className="menu menu-horizontal p-0">
 
 
-                        <li className='text-xl'><Link to='home'>Course</Link></li>
+                        <li className='text-xl'><Link to='course'>Course</Link></li>
                         <li className='text-xl'><Link to='home'>Faq</Link></li>
-                        <li className='text-xl'><Link to='home'>Blog</Link></li>
-
-
-
-
-
+                        <li className='text-xl'><Link to='blog'>Blog</Link></li>
                     </ul>
                 </div>
 
@@ -57,29 +53,85 @@ const Header = () => {
 
 
 
+                    {
+                        user ?
+                            <>
 
-                    
-                    <Link to='/login' className="btn btn-outline mx-5">Log In</Link>
-                    <Link to='/resister' className='btn'>Resister </Link>
+                                <div className='header-name-img-container'>
 
+
+
+                                    <div id='left' className='m-2 name-container'>
+                                        <div className="font-bold">{user?.displayName}</div>
+                                        <div className="text-sm opacity-50">{user?.email}</div>
+                                    </div>
+
+
+
+
+
+
+                                    <div className="avatar just-img-div">
+                                        <div className="mask mask-squircle w-12 h-12 mr-5  header-img ">
+                                            <img src={user?.photoURL} alt="Avatar Tailwind CSS Component" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <Link to='/resister' onClick={handleLogOut} className='btn'>Log Out </Link>
+                            </>
+                            :
+                            <>
+                                <Link to='/login' className="btn btn-outline mx-5">Log In</Link>
+                                <Link to='/resister' className='btn'>Resister </Link>
+                            </>
+
+                    }
 
 
 
                 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
             <hr />
         </div>
