@@ -13,6 +13,7 @@ const Header = () => {
         LogOut()
     }
 
+
     return (
         //max-w-screen-2xl mx-auto
         <div className=' bg-base-300 full-header'>
@@ -24,18 +25,31 @@ const Header = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href=' '>Item 1</a></li>
-                            <li tabIndex={0}>
-                                <a href=' ' className="justify-between">
-                                    Parent
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                </a>
-                                <ul className="p-2">
-                                    <li><a href=' '>Submenu 1</a></li>
-                                    <li><a href=' '>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href=' '>Item 3</a></li>
+                           
+
+
+                            <Link className=' btn btn-outline mb-5' to='course' >Course</Link>
+                            <Link className=' btn btn-outline mb-5' to='home'>Faq</Link>
+                            <Link className=' btn btn-outline mb-5' to='blog'>Blog</Link>
+
+
+
+
+
+                            {
+                                user?.email ?
+                                    <Link to='/resister' onClick={handleLogOut} className='btn mt-5'>Log Out </Link>
+
+                                    :
+                                    <>
+
+
+                                        <Link to='/login' className="btn mt-5">Log In</Link>
+                                        <Link to='/resister' className='btn mt-5'>Resister </Link>
+                                    </>
+                            }
+
+
                         </ul>
                     </div>
                     <Link to='/' className="btn btn-ghost normal-case  font-bold text-xl">best Sch <span className='text-primary font-bold'>oo</span> l</Link>
@@ -52,10 +66,12 @@ const Header = () => {
 
                 <div className="navbar-end">
 
-                    <React.Fragment>
-                        <ToggleSwitch  label=" "  />
-                    </React.Fragment>
-                    
+                    <div className='hidden sm:flex'>
+                        <React.Fragment>
+                            <ToggleSwitch label=" " />
+                        </React.Fragment>
+                    </div>
+
 
                     {
                         user ?
@@ -105,41 +121,6 @@ const Header = () => {
 
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

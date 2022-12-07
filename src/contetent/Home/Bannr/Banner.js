@@ -13,15 +13,11 @@ const Banner = () => {
         setBtnClass1(true);
         setBtnClass2(false);
         setBtnClass3(false);
-
-
     }
     const handleBtnClass2 = () => {
         setBtnClass2(true);
         setBtnClass1(false);
         setBtnClass3(false);
-
-
     }
     const handleBtnClass3 = () => {
         setBtnClass3(true);
