@@ -1,8 +1,0 @@
-{
-  "name": "toggle-switch",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react-to-pdf": "^0.0.14"
-  }
-}
