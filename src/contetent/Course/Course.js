@@ -5,7 +5,7 @@ const Course = () => {
     const courses = useLoaderData();
     console.log(courses)
     return (
-        <div>
+        <div className='bg-[#fff]'>
             <div className="drawer drawer-mobile mx-auto  h-auto">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center outlet-conter">

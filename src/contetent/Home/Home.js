@@ -3,9 +3,8 @@ import Banner from './Bannr/Banner';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-[#fff]'>
             <Banner></Banner>
-           
         </div>
     );
 };

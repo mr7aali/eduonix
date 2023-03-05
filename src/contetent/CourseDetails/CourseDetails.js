@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import { AuthContext } from '../../Context/AuthProvider';
 import './CourseDetails.css'
 
-import ReactDOM from "react-dom";
 import Pdf from "react-to-pdf";
 const ref = React.createRef();
 const options = {

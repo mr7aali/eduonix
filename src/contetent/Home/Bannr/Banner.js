@@ -29,7 +29,7 @@ const Banner = () => {
 
 
     return (
-        <div className=' rounded-lg mb-10 mt-10 relative max-w-screen-xl	mx-auto	'>
+        <div className='rounded-lg relative mx-auto	'>
             <div className="carousel w-full">
 
 
